@@ -294,7 +294,7 @@ li {
 
 .content-header1 {
   font-size: 2em;
-  top: 50vh;
+  top: 44%;
   -webkit-box-shadow: 5px 5px 10px 0px #ba02ba;
           box-shadow: 5px 5px 10px 0px #ba02ba; }
   @media only screen and (max-width: 320px) {
@@ -310,7 +310,7 @@ li {
 
 .content-header2 {
   font-size: 1.5em;
-  top: 60vh;
+  top: 53%;
   -webkit-box-shadow: 5px 5px 10px 0px #ba02ba;
           box-shadow: 5px 5px 10px 0px #ba02ba; }
   @media only screen and (max-width: 320px) {
@@ -326,7 +326,7 @@ li {
 
 .content-header3 {
   font-size: 1.5em;
-  top: 69vh;
+  top: 61%;
   -webkit-box-shadow: 5px 5px 10px 0px #ba02ba;
           box-shadow: 5px 5px 10px 0px #ba02ba; }
   @media only screen and (max-width: 320px) {

@@ -203,13 +203,14 @@ li {
   @include screen('tablet'){
     display: none;
   }
-  @include screen('smartphone-landscape'){
-    display: none;
-  }
 }
 
 #video{
   width: 100%;
+  @include screen ('desktopMidRes'){
+    width: auto;
+    height: 100vh;
+  }
 }
 
 

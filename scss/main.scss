@@ -52,6 +52,18 @@ li {
   list-style: none;
 }
 
+.section{
+   @include screen('tablet'){
+    height: 840px !important;
+}
+}
+
+.fp-tableCell{
+   @include screen('tablet'){
+    height: 840px !important;
+}
+}
+
 .section.ref{
 
   @include screen('mobile'){
@@ -179,20 +191,27 @@ li {
  }
 
  #fullScreenDiv{
-    width:100%;
-    min-height: 100%; 
-    height: 100%;
-    width: auto;
-    padding:0!important;
-    margin: 0!important;
-   
   @include screen('mobile'){
     display: none;
   }
   @include screen('smartphone'){
     display: none;
   }
+  @include screen('smartphone-landscape'){
+    display: none;
+  }
+  @include screen('tablet'){
+    display: none;
+  }
+  @include screen('smartphone-landscape'){
+    display: none;
+  }
 }
+
+#video{
+  width: 100%;
+}
+
 
 
 .nav-header{
@@ -319,53 +338,62 @@ li {
 
 .content-header1 {
      font-size: 2em;
-     top: 50vh;
+     top: 50%;
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
-       @include screen('mobile'){
+    @include screen('mobile'){
      font-size: 1em;
   }
-          @include screen('smartphone'){
+    @include screen('smartphone'){
      font-size: 1.2em;
   }
-              @include screen('smartphone-landscape'){
+    @include screen('smartphone-landscape'){
      font-size: 1.2em;
      top: 43vh;
+  }
+    @include screen('tablet'){
+     font-size: 1.7em;
   }
 }
 
 .content-header2{
       font-size: 1.5em;
-     top: 60vh;
+     top: 60%;
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
   @include screen('mobile'){
      font-size: 0.78em;
 
   }
-          @include screen('smartphone'){
+  @include screen('smartphone'){
      font-size: 0.8em;
   }
-              @include screen('smartphone-landscape'){
+  @include screen('smartphone-landscape'){
      font-size: 0.8em;
       top: 60vh;
+  }
+  @include screen('tablet'){
+     font-size: 1.3em;
   }
 }
 
 
 .content-header3{
     font-size: 1.5em;
-     top: 69vh;
+     top: 68%;
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
-     @include screen('mobile'){
+  @include screen('mobile'){
      font-size: 0.8em;
      top: 69vh;
   }
-          @include screen('smartphone'){
+  @include screen('smartphone'){
      font-size: 0.8em;
 
   }
-            @include screen('smartphone-landscape'){
+  @include screen('smartphone-landscape'){
      font-size: 0.8em;
      top: 75vh;
+  }
+  @include screen('tablet'){
+     font-size: 1.3em;
   }
 }
 
@@ -402,7 +430,7 @@ li {
             height: 400px;
           }
           @include screen('tablet'){
-            height: 60vh;
+            height: 45vh;
             width: 72%;
           }
           @include screen('desktopMidRes'){
@@ -620,10 +648,10 @@ li {
         @include screen('smartphone-landscape'){
           margin: auto;
         }
-              @include screen('tablet'){
+        @include screen('tablet'){
 
         }
-              @include screen('desktopMidRes'){
+        @include screen('desktopMidRes'){
           margin-right: 8%;
         }
       }
@@ -1215,11 +1243,16 @@ font-size: 15px;
       bottom: 20%;
       left: 8vw;
   }
+    @include screen('tablet'){
+      bottom: 80%;
+      width: 190px;
+      height: 190px;
+  }
 }
 
 .img-mixer{
-  width: 700px;
-  height: auto;
+  width: auto;
+  height: 400px;
   position: relative;
   bottom: -100px;
     @include screen('mobile'){
@@ -1240,6 +1273,15 @@ font-size: 15px;
       height: 240px;
       left: 12%;
   }
+       @include screen('tablet'){
+      top: 5%;
+      width: auto;
+      height: 300px;
+      left: 12%;
+  }
+    @include screen('$desktopMidRes'){
+
+  }
 }
 
 .img-headphones{
@@ -1256,6 +1298,10 @@ font-size: 15px;
   }
     @include screen('smartphone-landscape'){
       display: none;
+  }
+    @include screen('tablet'){
+      width: 200px;
+      left: 0px;
   }
 }
 
@@ -1304,6 +1350,10 @@ font-size: 15px;
     bottom: -35%;
     font-size: 1.7em;
   }
+    @include screen('tablet'){
+    right: 20%;
+    bottom: -10%;
+  }
 }
 
 .yt-icon{
@@ -1342,15 +1392,18 @@ font-size: 3.5em;
         }
         @include screen('smartphone-landscape'){
             font-size: 3.3em;
-            left: 9%;
-            
+            left: 9%;   
+        }
+              @include screen('tablet'){
+            bottom: 18%;
+            left: 8%;   
         }
       }
     &.about{
-      @include screen('mobile'){
+        @include screen('mobile'){
         left: 14%;
         top: 30%;
-    }
+        }
         @include screen('smartphone'){
           top: 35%;
           left: 14%;
@@ -1359,6 +1412,10 @@ font-size: 3.5em;
           left: 9%;
           bottom: -20px;
             
+        }
+            @include screen('tablet'){
+          left: 12%;
+          bottom: 55%;
         }
     }
 
@@ -1401,6 +1458,15 @@ font-size: 3.5em;
     border-left: 1px solid #000000;
     bottom: 70%;
     width: 60%;
+  }
+  @include screen('tablet'){
+    margin-left: 30%;
+    padding-left: 5px; 
+    border-left: 1px solid #000000;
+    width: 60%;
+    top: 20%;
+    position: absolute;
+    font-size: 1.3em;
   }
 }
 
@@ -1475,6 +1541,14 @@ font-size: 3.5em;
       font-size: 0.6em;
       justify-content: space-evenly;
     }
+    @include screen('tablet'){
+      color: #000000;
+      height: auto;
+      width: 500px;
+      margin-top: 15%;
+      font-size: 0.8em;
+      justify-content: space-evenly;
+    }
 }
 
 .comment-tittle{
@@ -1524,6 +1598,10 @@ font-size: 3.5em;
           top: 73%;
           border-color: #000000 !important;
         }
+             @include screen('tablet'){
+          top: 60%;
+          border-color: #000000 !important;
+        }
    &.fp-prev{
     transform: translate3d(0,-50%,0) rotate(-135deg);
    }
@@ -1555,6 +1633,10 @@ font-size: 3.5em;
   @include screen('smartphone-landscape'){
     left: 40vw;
     top: 65%;
+  }
+  @include screen('tablet'){
+    left: 42%;
+    top: 55%;
   }
 }
 
@@ -1649,6 +1731,11 @@ font-size: 3.5em;
       border-right: 0.2rem solid #999999;
 
     }
+              @include screen('tablet'){
+      border-top: 0.2rem solid #999999;
+      border-right: 0.2rem solid #999999;
+
+    }
   }
   
   &:hover {
@@ -1705,6 +1792,9 @@ font-size: 3.5em;
       @include screen('smartphone-landscape'){
       color: #000000;
     }
+      @include screen('tablet'){
+      color: #000000;
+    }
 }
 }
 
@@ -1727,6 +1817,10 @@ font-size: 3.5em;
       color: #000000;
     }
       @include screen('smartphone-landscape'){
+
+      color: #000000;
+    }
+      @include screen('tablet'){
 
       color: #000000;
     }
@@ -1780,6 +1874,11 @@ font-size: 3.5em;
     @include screen('smartphone-landscape'){
         position: unset;
         font-size: 1.6em;
+    }
+    @include screen('tablet'){
+        margin-top: 5%;
+        position: unset;
+        font-size: 2.2em;
 
     }
 
@@ -1795,6 +1894,10 @@ font-size: 3.5em;
     @include screen('smartphone-landscape'){
       position: relative;
       top: 5vh;
+  }
+      @include screen('tablet'){
+      position: relative;
+      top: -35%;
   }
   }
 
@@ -1816,12 +1919,16 @@ font-size: 3.5em;
       margin-left: 51%;
       margin-right: 9%;
     }  
+    @include screen('tablet'){
+      margin-left: 38%;
+    }  
 }
 
     .contact_sugestion_2{
 
         margin: 0;
-        right: 50%;margin-right: 20%;
+        right: 50%;
+        margin-right: 20%;
     @include screen('mobile'){
       top: -40%;
 
@@ -1830,6 +1937,10 @@ font-size: 3.5em;
 
     }
     @include screen('smartphone-landscape'){
+        margin-right: 28%;
+    }
+    @include screen('tablet'){
+        margin-top: 5%;
         margin-right: 28%;
     }
 }  
@@ -1916,8 +2027,13 @@ font-size: 3.5em;
     display: block;
     margin-left: 10%;
   }
-      @include screen('smartphone-landscape'){
+    @include screen('smartphone-landscape'){
     margin-top: 5%;
+  }
+    @include screen('tablet'){
+    margin-top: 10%;
+    display: block;
+    margin-left: 20%;
   }
 }
 .mail{
@@ -1934,6 +2050,9 @@ font-size: 3.5em;
     @include screen('smartphone-landscape'){
     font-size: 0.7em;
     align-items: flex-end;
+  }
+    @include screen('tablet'){
+    font-size: 1.2em;
   }
 }
 .contact-img{
@@ -1952,12 +2071,17 @@ font-size: 3.5em;
     font-size: 0.7em;
     margin-top: 15%;
   }
-      @include screen('smartphone'){
+    @include screen('smartphone'){
     font-size: 0.8em;
     margin-top: 15%;
   }
-      @include screen('smartphone-landscape'){
+    @include screen('smartphone-landscape'){
     font-size: 0.8em;
+    
+  }
+    @include screen('tablet'){
+    font-size: 1.2em;
+    margin-top: 5%;
     
   }
 }
@@ -2007,6 +2131,9 @@ font-size: 3.5em;
         width: 50px;
         height: 50px;
       }
+            @include screen('tablet'){
+        margin-right: 35%;
+      }
 }
 
 .yt-img{
@@ -2027,7 +2154,6 @@ font-size: 3.5em;
         width: 35px;
         height: 35px;
       }
-
 }
 
 .FB{
@@ -2075,7 +2201,6 @@ font-size: 3.5em;
         width: 15px;
         margin: 8px 18px;
   }
-
 }
 
 .INST{
@@ -2108,6 +2233,9 @@ font-size: 3.5em;
         margin-left: 10%;
         width: 50px;
         height: 50px;
+      }
+      @include screen('tablet'){
+        margin-left: 35%;
       }
 }
 
@@ -2144,6 +2272,9 @@ font-size: 3.5em;
   }
   @include screen('smartphone-landscape'){
     margin-left: 38%;
+  }
+  @include screen('tablet'){
+    margin-left: 40%;
   }
 }
 

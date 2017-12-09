@@ -339,12 +339,7 @@ li {
 
 .content-header1 {
      font-size: 2em;
-<<<<<<< HEAD
-     // top: 50vh;
-     top: 44%;
-=======
-     top: 50%;
->>>>>>> 2912be095bd06c9e41b4ed3aeaa687dda8aebf2e
+     top: 50vh;
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
     @include screen('mobile'){
      font-size: 1em;
@@ -363,12 +358,9 @@ li {
 
 .content-header2{
       font-size: 1.5em;
-<<<<<<< HEAD
-     // top: 60vh;
-     top: 53%;
-=======
-     top: 60%;
->>>>>>> 2912be095bd06c9e41b4ed3aeaa687dda8aebf2e
+
+     top: 60vh;
+
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
   @include screen('mobile'){
      font-size: 0.78em;
@@ -389,12 +381,9 @@ li {
 
 .content-header3{
     font-size: 1.5em;
-<<<<<<< HEAD
-     // top: 69vh;
-     top: 61%;
-=======
-     top: 68%;
->>>>>>> 2912be095bd06c9e41b4ed3aeaa687dda8aebf2e
+
+     top: 69vh;
+
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
   @include screen('mobile'){
      font-size: 0.8em;

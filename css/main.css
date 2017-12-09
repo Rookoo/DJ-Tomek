@@ -311,11 +311,7 @@ li {
 
 .content-header1 {
   font-size: 2em;
-<<<<<<< HEAD
-  top: 44%;
-=======
-  top: 50%;
->>>>>>> 2912be095bd06c9e41b4ed3aeaa687dda8aebf2e
+  top: 50vh;
   -webkit-box-shadow: 5px 5px 10px 0px #ba02ba;
           box-shadow: 5px 5px 10px 0px #ba02ba; }
   @media only screen and (max-width: 320px) {
@@ -334,11 +330,7 @@ li {
 
 .content-header2 {
   font-size: 1.5em;
-<<<<<<< HEAD
-  top: 53%;
-=======
-  top: 60%;
->>>>>>> 2912be095bd06c9e41b4ed3aeaa687dda8aebf2e
+  top: 60vh;
   -webkit-box-shadow: 5px 5px 10px 0px #ba02ba;
           box-shadow: 5px 5px 10px 0px #ba02ba; }
   @media only screen and (max-width: 320px) {
@@ -357,11 +349,7 @@ li {
 
 .content-header3 {
   font-size: 1.5em;
-<<<<<<< HEAD
-  top: 61%;
-=======
-  top: 68%;
->>>>>>> 2912be095bd06c9e41b4ed3aeaa687dda8aebf2e
+  top: 69vh;
   -webkit-box-shadow: 5px 5px 10px 0px #ba02ba;
           box-shadow: 5px 5px 10px 0px #ba02ba; }
   @media only screen and (max-width: 320px) {

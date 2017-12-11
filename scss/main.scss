@@ -343,7 +343,7 @@ li {
 
 .content-header1 {
      font-size: 2em;
-     top: 50%;
+     top: 50vh;
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
     @include screen('mobile'){
      font-size: 1em;
@@ -365,7 +365,9 @@ li {
 
 .content-header2{
       font-size: 1.5em;
-     top: 60%;
+
+     top: 60vh;
+
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
   @include screen('mobile'){
      font-size: 0.78em;
@@ -388,7 +390,9 @@ li {
 
 .content-header3{
     font-size: 1.5em;
-     top: 68%;
+
+     top: 69vh;
+
      box-shadow: 5px 5px 10px 0px rgba(186,2,186,1);
   @include screen('mobile'){
      font-size: 0.8em;

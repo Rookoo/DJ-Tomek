@@ -913,6 +913,14 @@ li {
           top: -35% !important;
           width: 85%;
         }
+        // @include screen('tablet'){
+        //   height: 50%;
+        //   top: -35% !important;
+        //   width: 85%;
+        // }
+        @include screen('desktopMidRes'){
+          width: 80%;
+        }
       }
 
 .modal__close {
@@ -966,6 +974,14 @@ li {
             height: 80vh !important;
 
         }
+        // @include screen('tablet'){
+        //     height: 80vh !important;
+
+        // }
+        // @include screen('desktopMidRes'){
+        //     height: 80vh !important;
+
+        // }
     }
       .slidesjs-slide{
           width: 95vw;
@@ -995,8 +1011,8 @@ li {
       top: 50%;
       width: 1.8em !important;
       height: 1.8em !important;
-      border-top: .5rem solid black !important;
-      border-right: .5rem solid black !important;
+      border-top: 0.5em solid black !important;
+      border-right: 0.5em solid black !important;
       z-index: 2;
       transition: all 200ms ease !important;
             @include screen('mobile'){
@@ -1006,17 +1022,29 @@ li {
               border-right: 0.2rem solid #000000 !important;
 
             }
-              @include screen('smartphone'){
+            @include screen('smartphone'){
               width: 1.4em !important;
               height: 1.4em !important;
-              border-top: 0.3rem solid #000000 !important;
-              border-right: 0.3rem solid #000000 !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
             }
-                     @include screen('smartphone-landscape'){
+            @include screen('smartphone-landscape'){
               width: 1.4em !important;
               height: 1.4em !important;
-              border-top: 0.3rem solid #000000 !important;
-              border-right: 0.3rem solid #000000 !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
+          }
+            @include screen('smartphone-landscape'){
+              width: 1.4em !important;
+              height: 1.4em !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
+          }
+             @include screen('desktopMidRes'){
+              width: 1.6em !important;
+              height: 1.6em !important;
+              border-top: 0.4em solid #000000 !important;
+              border-right: 0.4em solid #000000 !important;
           }
     }
 
@@ -1027,27 +1055,39 @@ li {
       top: 50%;
       width: 1.8em !important;
       height: 1.8em !important;
-      border-top: .5rem solid black !important;
-      border-right: .5rem solid black !important;
+      border-top: 0.5em solid black !important;
+      border-right: 0.5em solid black !important;
       z-index: 2;
       transition: all 200ms ease !important;
               @include screen('mobile'){
               width: 1.4em !important;
               height: 1.4em !important;
-              border-top: 0.3rem solid #000000 !important;
-              border-right: 0.3rem solid #000000 !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
             }
               @include screen('smartphone'){
               width: 1.4em !important;
               height: 1.4em !important;
-              border-top: 0.3rem solid #000000 !important;
-              border-right: 0.3rem solid #000000 !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
             }
-                     @include screen('smartphone-landscape'){
+            @include screen('smartphone-landscape'){
               width: 1.4em !important;
               height: 1.4em !important;
-              border-top: 0.3rem solid #000000 !important;
-              border-right: 0.3rem solid #000000 !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
+          }
+            @include screen('smartphone-landscape'){
+              width: 1.4em !important;
+              height: 1.4em !important;
+              border-top: 0.3em solid #000000 !important;
+              border-right: 0.3em solid #000000 !important;
+          }
+             @include screen('desktopMidRes'){
+              width: 1.6em !important;
+              height: 1.6em !important;
+              border-top: 0.4em solid #000000 !important;
+              border-right: 0.4em solid #000000 !important;
           }
     }
 
@@ -1195,6 +1235,14 @@ li {
           font-size: 1.3em;
           margin: 10px;
         }
+            @include screen('smartphone-landscape'){
+          font-size: 1.3em;
+          margin: 10px;
+        }
+            @include screen('desktopMidRes'){
+          font-size: 1.7em;
+          margin: 10px;
+        }
 }
 
 .offert-slide-tittle{
@@ -1211,6 +1259,12 @@ li {
         }
         @include screen('smartphone-landscape'){
           font-size: 2em;
+        }
+        @include screen('smartphone-landscape'){
+          font-size: 2em;
+        }
+        @include screen('desktopMidRes'){
+          font-size: 3em;
         }
 }
 
@@ -1232,6 +1286,14 @@ li {
         }
         @include screen('smartphone-landscape'){
           font-size: 0.6em;
+          border-left: 3px solid #E235EE;
+        }
+        @include screen('smartphone-landscape'){
+          font-size: 0.6em;
+          border-left: 3px solid #E235EE;
+        }
+        @include screen('desktopMidRes'){
+          font-size: 0.9em;
           border-left: 3px solid #E235EE;
         }
 }
@@ -1292,6 +1354,10 @@ font-size: 15px;
       width: 190px;
       height: 190px;
   }
+    @include screen('desktopMidRes'){
+      width: 210px;
+      height: 210px;
+  }
 }
 
 .img-mixer{
@@ -1349,7 +1415,7 @@ font-size: 15px;
       left: 0px;
   }
     @include screen('desktopMidRes'){
-      width: 500px;
+      width: 400px;
       left: 5%;
   }
 }
@@ -1784,15 +1850,14 @@ font-size: 3.5em;
             border-right: 0.2rem solid #000000;
             
           }
-                @include screen('smartphone'){
+          @include screen('smartphone'){
             border-top: 0.2rem solid #999999;
             border-right: 0.2rem solid #999999;
 
           }
-                  @include screen('smartphone-landscape'){
+          @include screen('smartphone-landscape'){
             border-top: 0.2rem solid #999999;
             border-right: 0.2rem solid #999999;
-
           }
   }
   &.down {
@@ -2226,7 +2291,8 @@ font-size: 3.5em;
   height: 70px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  margin-right: 20%;
+  // margin-right: 20%;
+  right: 35%;
   padding: 5px;
   bottom: 30%;
     &:hover{
@@ -2341,7 +2407,8 @@ font-size: 3.5em;
   height: 70px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  margin-left: 20%;
+  // margin-left: 20%;
+  left: 35%;
   padding: 5px;
   bottom: 30%;
         &:hover{

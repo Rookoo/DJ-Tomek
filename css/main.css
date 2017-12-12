@@ -819,6 +819,9 @@ li {
       height: 50%;
       top: -35% !important;
       width: 85%; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .modal__inner {
+      width: 80%; } }
 
 .modal__close {
   position: absolute;
@@ -891,8 +894,8 @@ li {
   top: 50%;
   width: 1.8em !important;
   height: 1.8em !important;
-  border-top: .5rem solid black !important;
-  border-right: .5rem solid black !important;
+  border-top: 0.5em solid black !important;
+  border-right: 0.5em solid black !important;
   z-index: 2;
   -webkit-transition: all 200ms ease !important;
   -o-transition: all 200ms ease !important;
@@ -907,14 +910,26 @@ li {
     .slidesjs-previous {
       width: 1.4em !important;
       height: 1.4em !important;
-      border-top: 0.3rem solid #000000 !important;
-      border-right: 0.3rem solid #000000 !important; } }
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .slidesjs-previous {
       width: 1.4em !important;
       height: 1.4em !important;
-      border-top: 0.3rem solid #000000 !important;
-      border-right: 0.3rem solid #000000 !important; } }
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slidesjs-previous {
+      width: 1.4em !important;
+      height: 1.4em !important;
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .slidesjs-previous {
+      width: 1.6em !important;
+      height: 1.6em !important;
+      border-top: 0.4em solid #000000 !important;
+      border-right: 0.4em solid #000000 !important; } }
 
 .slidesjs-next {
   right: 20px !important;
@@ -923,8 +938,8 @@ li {
   top: 50%;
   width: 1.8em !important;
   height: 1.8em !important;
-  border-top: .5rem solid black !important;
-  border-right: .5rem solid black !important;
+  border-top: 0.5em solid black !important;
+  border-right: 0.5em solid black !important;
   z-index: 2;
   -webkit-transition: all 200ms ease !important;
   -o-transition: all 200ms ease !important;
@@ -933,20 +948,32 @@ li {
     .slidesjs-next {
       width: 1.4em !important;
       height: 1.4em !important;
-      border-top: 0.3rem solid #000000 !important;
-      border-right: 0.3rem solid #000000 !important; } }
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
   @media only screen and (min-width: 321px) and (max-width: 480px) {
     .slidesjs-next {
       width: 1.4em !important;
       height: 1.4em !important;
-      border-top: 0.3rem solid #000000 !important;
-      border-right: 0.3rem solid #000000 !important; } }
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .slidesjs-next {
       width: 1.4em !important;
       height: 1.4em !important;
-      border-top: 0.3rem solid #000000 !important;
-      border-right: 0.3rem solid #000000 !important; } }
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slidesjs-next {
+      width: 1.4em !important;
+      height: 1.4em !important;
+      border-top: 0.3em solid #000000 !important;
+      border-right: 0.3em solid #000000 !important; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .slidesjs-next {
+      width: 1.6em !important;
+      height: 1.6em !important;
+      border-top: 0.4em solid #000000 !important;
+      border-right: 0.4em solid #000000 !important; } }
 
 .background-slidejs-prev {
   width: 50px;
@@ -1082,6 +1109,14 @@ li {
     .discription-offert-slide {
       font-size: 1.3em;
       margin: 10px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .discription-offert-slide {
+      font-size: 1.3em;
+      margin: 10px; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .discription-offert-slide {
+      font-size: 1.7em;
+      margin: 10px; } }
 
 .offert-slide-tittle {
   -ms-flex-item-align: center;
@@ -1099,6 +1134,12 @@ li {
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .offert-slide-tittle {
       font-size: 2em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .offert-slide-tittle {
+      font-size: 2em; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .offert-slide-tittle {
+      font-size: 3em; } }
 
 .content-offert-slide {
   width: 50%;
@@ -1118,6 +1159,14 @@ li {
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .content-offert-slide {
       font-size: 0.6em;
+      border-left: 3px solid #E235EE; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .content-offert-slide {
+      font-size: 0.6em;
+      border-left: 3px solid #E235EE; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .content-offert-slide {
+      font-size: 0.9em;
       border-left: 3px solid #E235EE; } }
 
 .aboutMe {
@@ -1175,6 +1224,10 @@ li {
       bottom: 80%;
       width: 190px;
       height: 190px; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .img-face {
+      width: 210px;
+      height: 210px; } }
 
 .img-mixer {
   width: auto;
@@ -1232,7 +1285,7 @@ li {
       left: 0px; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
     .img-headphones {
-      width: 500px;
+      width: 400px;
       left: 5%; } }
 
 .yt-button {
@@ -2053,7 +2106,7 @@ li {
   height: 70px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  margin-right: 20%;
+  right: 35%;
   padding: 5px;
   bottom: 30%; }
   .YT:hover {
@@ -2161,7 +2214,7 @@ li {
   height: 70px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  margin-left: 20%;
+  left: 35%;
   padding: 5px;
   bottom: 30%; }
   .INST:hover {

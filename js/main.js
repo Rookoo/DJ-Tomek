@@ -1,5 +1,12 @@
+(function($) {
+    $(window).load(function() { 
+  $('#status').fadeOut(); 
+  $('#preload').delay(350).fadeOut('slow'); 
+  $('body').delay(350).css({'overflow':'visible'});
+    });
+})(jQuery)
 
-        $(document).ready(function() {
+$(document).ready(function() {
 
             $('#fullpage').fullpage({
                 anchors: ['Dj Tomek', 'Oferta', 'O mnie', 'Referencje', 'FAQ', 'Kontakt'],
@@ -8,8 +15,7 @@
                 navigationPosition: 'right',
                 navigationTooltips: ['Dj Tomek', 'Oferta', 'O mnie', 'Referencje', 'FAQ', 'Kontakt'],
                 responsiveWidth: 1023,
-                afterResponsive: function(isResponsive){
-                    
+                afterResponsive: function(isResponsive){  
                 }
 
             });
@@ -28,6 +34,7 @@
         $(this).toggleClass('open');
         $menuWrap.toggleClass('menu-show');
     });
+
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();

@@ -295,7 +295,7 @@ li {
 }
 
 // <<<<<<<<<<..........hamburger.........>>>>>>>>>>>>>>>>
-#nav-icon1{
+#nav-icon{
   width: 30px;
   height: 30px;
   left: 2%;
@@ -316,9 +316,7 @@ li {
   left: 0;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
-        & .change{
-          background: #000000;
-        }
+        
       &:nth-child(1) {
   top: 0px;
 }
@@ -348,6 +346,9 @@ li {
       display: none;
     }
 }
+.hamburger-black{
+  background: #000000 !important;
+        }
 
 .content-header1, .content-header2, .content-header3{
     padding: 2px 20px 2px 2px;
@@ -490,6 +491,13 @@ li {
   width: 100px;
   height: auto;
 }  
+}
+figure{
+  margin: 0;
+}
+
+figcaption{
+  margin-top: 25px;
 }
 
 // <<<<<<<<........ ikonki ofert..........>>>>>>>>>>>>>
@@ -873,44 +881,21 @@ li {
 
 // <<<<<<<<........ BOX..........>>>>>>>>>>>>>
 .modal {
-  opacity: 0;
-  visibility: hidden;
+      opacity: 0;
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.9);
+}
+
+
+.modal-content {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: left;
-  background: rgba(0,0,0, .9);
-  transition: opacity .25s ease;
-}
-
-.modal-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  cursor: pointer;
-}
-
-.modal-state {
-  display: none;
-}
-
-.modal-state:checked + .modal {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-state:checked + .modal .modal-inner {
-  top: 0;
-}
-
-.modal-inner {
-  transition: top .25s ease;
-  position: absolute;
-  top: -20%;
+  top: 5%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -936,11 +921,11 @@ li {
           top: -35% !important;
           width: 85%;
         }
-        // @include screen('tablet'){
-        //   height: 50%;
-        //   top: -35% !important;
-        //   width: 85%;
-        // }
+        @include screen('tablet'){
+          height: 50%;
+          top: -35% !important;
+          width: 85%;
+        }
         @include screen('desktopMidRes'){
           width: 80%;
         }
@@ -976,6 +961,15 @@ li {
       }
 
 }
+
+  .modal_multi{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+  }
 
 .modal-close:before {
   transform: rotate(-45deg);

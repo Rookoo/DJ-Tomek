@@ -226,7 +226,7 @@ li {
       position: relative;
       text-decoration: none; }
 
-#nav-icon1 {
+#nav-icon {
   width: 30px;
   height: 30px;
   left: 2%;
@@ -240,7 +240,7 @@ li {
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 998; }
-  #nav-icon1 .hamburger {
+  #nav-icon .hamburger {
     display: block;
     position: fixed;
     height: 4px;
@@ -255,36 +255,37 @@ li {
     -webkit-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out; }
-    #nav-icon1 .hamburger .change {
-      background: #000000; }
-    #nav-icon1 .hamburger:nth-child(1) {
+    #nav-icon .hamburger:nth-child(1) {
       top: 0px; }
-    #nav-icon1 .hamburger:nth-child(2) {
+    #nav-icon .hamburger:nth-child(2) {
       top: 9px; }
-    #nav-icon1 .hamburger:nth-child(3) {
+    #nav-icon .hamburger:nth-child(3) {
       top: 18px; }
-  #nav-icon1.open span:nth-child(1) {
+  #nav-icon.open span:nth-child(1) {
     top: 8px;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg); }
-  #nav-icon1.open span:nth-child(2) {
+  #nav-icon.open span:nth-child(2) {
     opacity: 0;
     left: 60px; }
-  #nav-icon1.open span:nth-child(3) {
+  #nav-icon.open span:nth-child(3) {
     top: 8px;
     -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
             transform: rotate(-135deg); }
   @media only screen and (min-width: 1500px) {
-    #nav-icon1 {
+    #nav-icon {
       display: none; } }
   @media only screen and (desktopHiRes) {
-    #nav-icon1 {
+    #nav-icon {
       display: none; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
-    #nav-icon1 {
+    #nav-icon {
       display: none; } }
+
+.hamburger-black {
+  background: #000000 !important; }
 
 .content-header1, .content-header2, .content-header3 {
   padding: 2px 20px 2px 2px;
@@ -419,6 +420,12 @@ li {
   .img-offert img {
     width: 100px;
     height: auto; }
+
+figure {
+  margin: 0; }
+
+figcaption {
+  margin-top: 25px; }
 
 .wedding {
   width: 100px;
@@ -751,41 +758,17 @@ li {
 .modal {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   text-align: left;
-  background: rgba(0, 0, 0, 0.9);
-  -webkit-transition: opacity .25s ease;
-  -o-transition: opacity .25s ease;
-  transition: opacity .25s ease; }
+  background: rgba(0, 0, 0, 0.9); }
 
-.modal-bg {
+.modal-content {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  cursor: pointer; }
-
-.modal-state {
-  display: none; }
-
-.modal-state:checked + .modal {
-  opacity: 1;
-  visibility: visible; }
-
-.modal-state:checked + .modal .modal-inner {
-  top: 0; }
-
-.modal-inner {
-  -webkit-transition: top .25s ease;
-  -o-transition: top .25s ease;
-  transition: top .25s ease;
-  position: absolute;
-  top: -20%;
+  top: 5%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -797,22 +780,27 @@ li {
   padding: 1.5em 2em;
   height: 80%; }
   @media only screen and (max-width: 320px) {
-    .modal-inner {
+    .modal-content {
       height: 42%;
       width: 70%;
       top: -40% !important; } }
   @media only screen and (min-width: 321px) and (max-width: 480px) {
-    .modal-inner {
+    .modal-content {
       height: 55%;
       top: -30% !important;
       width: 82%; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .modal-inner {
+    .modal-content {
+      height: 50%;
+      top: -35% !important;
+      width: 85%; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .modal-content {
       height: 50%;
       top: -35% !important;
       width: 85%; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
-    .modal-inner {
+    .modal-content {
       width: 80%; } }
 
 .modal-close {
@@ -845,6 +833,14 @@ li {
     -webkit-transition: all 200ms ease !important;
     -o-transition: all 200ms ease !important;
     transition: all 200ms ease !important; }
+
+.modal_multi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer; }
 
 .modal-close:before {
   -webkit-transform: rotate(-45deg);

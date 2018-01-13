@@ -912,18 +912,18 @@ figcaption{
           top: -40% !important;
         }
         @include screen('smartphone'){
-          height: 55%;
-          top: -30% !important;
+          height: 45%;
+          top: -40%;
           width: 82%;
         }
         @include screen('smartphone-landscape'){
           height: 50%;
-          top: -35% !important;
+          top: -40%;
           width: 85%;
         }
         @include screen('tablet'){
-          height: 50%;
-          top: -35% !important;
+          height: 70%;
+          top: -10%;
           width: 85%;
         }
         @include screen('desktopMidRes'){
@@ -991,10 +991,10 @@ figcaption{
             height: 80vh !important;
 
         }
-        // @include screen('tablet'){
-        //     height: 80vh !important;
+        @include screen('tablet'){
+            height: 55vh !important;
 
-        // }
+        }
         // @include screen('desktopMidRes'){
         //     height: 80vh !important;
 
@@ -1185,6 +1185,9 @@ figcaption{
               margin-left: 21%;
             }
             @include screen('smartphone-landscape'){
+              margin-left: 35%;
+            }
+            @include screen('tablet'){
               margin-left: 35%;
             }
 

@@ -786,18 +786,18 @@ figcaption {
       top: -40% !important; } }
   @media only screen and (min-width: 321px) and (max-width: 480px) {
     .modal-content {
-      height: 55%;
-      top: -30% !important;
+      height: 45%;
+      top: -40%;
       width: 82%; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .modal-content {
       height: 50%;
-      top: -35% !important;
+      top: -40%;
       width: 85%; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .modal-content {
-      height: 50%;
-      top: -35% !important;
+      height: 70%;
+      top: -10%;
       width: 85%; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
     .modal-content {
@@ -861,6 +861,9 @@ figcaption {
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .slidesjs-container, .slidesjs-control {
       height: 80vh !important; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .slidesjs-container, .slidesjs-control {
+      height: 55vh !important; } }
 
 .slidesjs-slide {
   width: 95vw;
@@ -1041,6 +1044,9 @@ figcaption {
       margin-top: 15%;
       margin-left: 21%; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .slidesjs-pagination {
+      margin-left: 35%; } }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .slidesjs-pagination {
       margin-left: 35%; } }
   .slidesjs-pagination li {

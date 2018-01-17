@@ -117,7 +117,7 @@ $slideArrowNext.hover(function(){
         var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
         var span_close_multi = document.getElementsByClassName("modal-close");
 
-        // When the user clicks the button, open the modal
+
         function setDataIndex() {
 
             for (i = 0; i < modal_btn_multi.length; i++)

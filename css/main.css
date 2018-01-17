@@ -705,24 +705,27 @@ figcaption {
   margin-left: 45%;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.2em; }
-  .offert-discript h4 {
+  @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+    .offert-discript h1 {
+      font-size: 1.8em; } }
+  .offert-discript h2 {
     font-size: 1.6em;
     margin-bottom: 0; }
     @media only screen and (max-width: 320px) {
-      .offert-discript h4 {
+      .offert-discript h2 {
         font-size: 1.1em; } }
     @media only screen and (min-width: 321px) and (max-width: 480px) {
-      .offert-discript h4 {
+      .offert-discript h2 {
         font-size: 1.1em; } }
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-      .offert-discript h4 {
+      .offert-discript h2 {
         font-size: 1.2em; } }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      .offert-discript h4 {
+      .offert-discript h2 {
         font-size: 1.1em; } }
     @media only screen and (min-width: 1024px) and (max-width: 1499px) {
-      .offert-discript h4 {
-        font-size: 1.2em; } }
+      .offert-discript h2 {
+        font-size: 1.4em; } }
   @media only screen and (max-width: 320px) {
     .offert-discript {
       font-size: 1.1em;
@@ -753,6 +756,7 @@ figcaption {
       width: 66%; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
     .offert-discript {
+      width: 45%;
       font-size: 1.1em; } }
 
 .modal {
@@ -1383,8 +1387,7 @@ figcaption {
       left: 8%; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
     .section-tittle.offert-title {
-      font-size: 3em;
-      bottom: -20px; } }
+      font-size: 3em; } }
   @media only screen and (max-width: 320px) {
     .section-tittle.about {
       left: 14%;
@@ -1418,7 +1421,7 @@ figcaption {
       bottom: 0%; } }
   @media only screen and (min-width: 1024px) and (max-width: 1499px) {
     .section-tittle {
-      bottom: -3%; } }
+      bottom: -1%; } }
 
 .aboutMe-discript {
   margin-top: 2%;

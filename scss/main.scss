@@ -827,7 +827,12 @@ figcaption{
   margin-left: 45%;
   font-family: $Yanone;
   font-size: 1.2em;
-    & h4{
+    & h1{
+        @include screen('desktopMidRes'){
+        font-size: 1.8em;
+      }
+    }
+    & h2{
       font-size: 1.6em;
       margin-bottom: 0;
       @include screen('mobile'){
@@ -843,7 +848,7 @@ figcaption{
         font-size: 1.1em;
       }
       @include screen('desktopMidRes'){
-        font-size: 1.2em;
+        font-size: 1.4em;
       }
     }
       @include screen('mobile'){
@@ -875,6 +880,7 @@ figcaption{
         width: 66%;
       }
       @include screen('desktopMidRes'){
+          width: 45%;
           font-size: 1.1em;
       }
 }
@@ -1542,8 +1548,7 @@ font-size: 3.5em;
             left: 8%;   
         }
         @include screen('desktopMidRes'){
-            font-size: 3em;
-            bottom: -20px;  
+            font-size: 3em; 
         }
       }
     &.about{
@@ -1582,7 +1587,7 @@ font-size: 3.5em;
     bottom: 0%;
   }
   @include screen('desktopMidRes'){
-    bottom: -3%;  
+    bottom: -1%;  
   }
 }
 

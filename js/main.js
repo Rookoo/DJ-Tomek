@@ -25,9 +25,6 @@ $(document).ready(function() {
                         $slideArrowNext = $('.slidesjs-next'),
                           $bgArrowSlidePrev = $('.background-slidejs-prev'),
                             $bgArrowSlideNext = $('.background-slidejs-next');
-                              // $modalparent = $('.modal')
-                              //   $modalBtn = $('.img-offert')
-                              //     $spanClose = $('.modal-close')
 
 
    $toggleButton.on('click', function() {
@@ -39,10 +36,8 @@ $(document).ready(function() {
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
       if(scroll >= 450) {
-        // $('.hamburger').attr('style', 'background: #000000');
         $('.hamburger').addClass('hamburger-black');
     } else {
-        // $('.hamburger').removeAttr('style', 'background: #000000');
         $('.hamburger').removeClass('hamburger-black');
     }
 });
@@ -114,7 +109,7 @@ $slideArrowNext.hover(function(){
 
       
       var modalparent = document.getElementsByClassName("modal_multi");
-        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+        var modal_btn_multi = document.getElementsByClassName("myBtn-multi");
         var span_close_multi = document.getElementsByClassName("modal-close");
 
 

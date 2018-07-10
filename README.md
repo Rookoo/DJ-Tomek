@@ -1,3 +1,3 @@
 # DJ-Tomek
 
-http://razdwatrzy.ct8.pl
+http://razdwatrzy.seba124.usermd.net/
